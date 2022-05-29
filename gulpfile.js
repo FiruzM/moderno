@@ -33,7 +33,7 @@ gulp.task('style', function(){
 
 // Sass in to css
 gulp.task('sass', function(){
-    return gulp.src('app/scss/style.scss')
+    return gulp.src('app/scss/**/*.scss')
         .pipe(sass({outputStyle: 'compressed'}))
         .pipe(rename({suffix: '.min'}))
         .pipe(autoprefixer({
@@ -69,7 +69,7 @@ gulp.task('browser-sync', function(){
 
 // watching
 gulp.task('watch', function(){
-    gulp.watch('app/scss/style.scss', gulp.parallel('sass'));
+    gulp.watch('app/scss/**/*.scss', gulp.parallel('sass'));
     gulp.watch('app/*.html', gulp.parallel('html'));
     gulp.watch('app/js/*.js', gulp.parallel('js'));
 });

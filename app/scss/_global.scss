@@ -34,8 +34,34 @@ h6{
     padding: 0;
 }
 
+button{
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.container-fluid{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0px 30px;
+}
+
+@media (max-width: 720px){
+    .container-fluid{
+        padding: 0px 15px;
+    }
+}
+
+.title{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 60/36*100%;
+    text-align: center;
+    color: $darkBlue;
 }

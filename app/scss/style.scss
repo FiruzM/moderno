@@ -2,6 +2,8 @@
 @import 'global.scss';
 @import 'fonts.scss';
 
+//HEADER =======================================================================================================================================================================================================================
+
 .header {
 
     // .header__top
@@ -24,9 +26,9 @@
         margin-left: auto;
         margin-right: 50px;
         font-size: 15px;
-        line-height: (24/15)*100%;
+        line-height: 24/15*100%;
         font-weight: 400;
-        color: #546e7a;
+        color:  $grayBlue;
     }
 
     // .header__phone-text
@@ -52,7 +54,7 @@
         margin-left: 21px;
         min-width: 72px;
         font-size: 12px;
-        line-height: (24/12)*100%;
+        line-height: 24/12*100%;
         color: #fff;
         border-radius: 3px;
         text-align: center;
@@ -94,7 +96,7 @@
 
     &__item {
         font-weight: 500;
-        line-height: (30/24)*100%;
+        line-height: 30/24*100%;
         color: #fff;
     }
 
@@ -107,6 +109,10 @@
     &__link {
     }
 }
+// =======================================================================================================================================================================================================================
+
+// SEARCH =======================================================================================================================================================================================================================
+
 
 .search {
     position: relative;
@@ -133,7 +139,7 @@
 
     &__title {
         font-size: 48px;
-        line-height: (55/48)*100%;
+        line-height: 55/48*100%;
         font-weight: 700;
         color: #fff;
         margin-bottom: 15px;
@@ -196,12 +202,193 @@
         border: none;
         outline: none;
         right: 20px;
-        top: 16px;
+        top: 15px;
+        border: 1px solid transparent;
         cursor: pointer;
-        
+        &:focus{
+            border: 1px solid $darkBlue;
+        }
 
     }
 }
+// =======================================================================================================================================================================================================================
+
+// PRODUCT===========================================================================================================================================================================================================================
+
+.product {
+    padding: 110px 0px;
+    background-color: $bgray;
+    // .product__title
+
+    &__title {
+        margin-bottom: 45px;
+    }
+
+    // .product__inner
+
+    &__inner {
+    }
+
+    // .product__inner-btn
+
+    &__inner-btn {
+        text-align: center;
+        margin-bottom: 60px;
+        button{
+            padding: 12px 21px;
+            font-weight: 500;
+            background-color: #fff;
+            color: $darkBlue;
+            cursor: pointer;
+            transition: background 0.3s ease, color 0.2s;
+            & + button{
+                margin-left: 6px;
+            }
+            &:hover{
+                background-color: $red;
+                color: #fff;
+            }
+        }
+        .mixitup-control-active{
+            background-color: $red;
+            color: #fff;
+        }
+    }
+
+
+    // .product__inner-box
+
+    &__inner-box {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    // .product__item
+
+    &__item {
+        flex: 0 1 442px;
+        width: 100%;
+        box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+        background-color: #fff;
+        @media (max-width: 1921){
+            flex: 1 1 442px;
+        }
+    }
+
+    // .product__item-img
+
+    &__item-img {
+        display: block;
+        min-height: 250px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center ;
+    }
+
+    // .product__item-content
+
+    &__item-content,
+    &__item-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__item-content{
+        padding: 30px 30px 17px 32px;
+        border-bottom: 1px solid #ebeeef;
+        font-weight: 500;
+    }
+
+    // .product__item-name
+
+    &__item-name {
+        max-width: 230px;
+    }
+
+    // .product__item-title
+
+    &__item-title {
+        display: block;
+        margin-bottom: 12px;
+        font-size: 18px;
+    }
+
+    // .product__item-category
+
+    &__item-category {
+        display: block;
+        margin-left: 2px;
+        font-size: 14px;
+        color: $green;
+    }
+
+    // .product__item-price
+
+    &__item-price {
+        font-size: 20px;
+    }
+
+    // .product__item-info
+
+    &__item-info {
+        padding: 17px 30px 21px 33px;
+        min-height: 68px;
+    }
+
+    // .product__item-author
+
+    &__item-author {     
+        display: flex;
+        align-items: center; 
+        max-width: 15px;       
+        font-size: 14px;
+        font-weight: 500;
+        color: $grayBlue;
+        img{
+            margin-right: 14px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: gray;
+        }
+    }
+
+    // .product__item-star
+
+    &__item-star {
+    }
+
+    &__item-bottom{
+        display: flex;
+        justify-content: center;
+        margin-top: 45px;
+        button{
+            padding: 18px 32px;
+            // min-width: 163px;
+            font-size: 16px;
+            text-align: center;
+            box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
+            background-color: #fff;
+            cursor: pointer;
+            & + button{
+                margin-left: 8px;
+            }
+        }
+        .mixitup-control-active{
+            background-color: $red;
+            color: #fff;
+            }
+           
+        
+          
+    }
+}
+
+// =======================================================================================================================================================================================================================
+
+// =======================================================================================================================================================================================================================
 
 
 

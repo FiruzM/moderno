@@ -267,15 +267,17 @@
     // .product__item
 
     &__item {
+        position: relative;
         flex: 0 1 442px;
         width: 100%;
         box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
         background-color: #fff;
-        @media (max-width: 1921){
-            flex: 1 1 442px;
-        }
+        @media (min-width: 1921px){
+                flex: 1 1 442px; 
     }
-
+        
+    }
+    
     // .product__item-img
 
     &__item-img {
@@ -358,6 +360,15 @@
     // .product__item-star
 
     &__item-star {
+        display: flex;
+        font-size: 12px;
+        color: $grayBlue;
+        span{
+            color: $darkBlue;
+        }
+        .rate-star{
+            margin-right: 13px;
+        }
     }
 
     &__item-bottom{
@@ -381,14 +392,69 @@
             color: #fff;
             }
            
-        
-          
-    }
+      
+            
+        }
+        &__item-popular{
+            position: absolute;
+            border: 30px solid transparent; 
+            border-left: 30px solid #8bc34a; 
+            border-top: 30px solid #8bc34a;
+            top: 0;
+            left: 0;
+         
+        }
 }
 
 // =======================================================================================================================================================================================================================
 
-// =======================================================================================================================================================================================================================
+// PRODUCT-SLIDER=======================================================================================================================================================================================================================
+.product-slider {
+    padding: 110px 0 120px;
+    // .product-slider__inner
+
+    &__inner {
+        margin-top: 55px;
+    }
+
+    .product__item{
+        flex: none;
+        max-width: 460px;
+        border: 1px solid rgb(227, 227, 227);
+        box-shadow: none;
+        
+    }
+
+    .slick-dots{
+        display: flex;
+        justify-content: center;
+        margin-top: 66px;
+        & li{
+            margin: 0px 3.5px;
+            font-size: 0px;
+            width: 15px;
+            height: 15px;
+            border: 1px solid #d2d2d2;
+            border-radius: 50%;
+            background-color: rgb(232, 232, 232);
+            cursor: pointer;
+            &.slick-active{
+                background-color:$green;
+                border-color: $green;
+            }
+        }   
+    }
+   
+
+}
+
+
+
+
+
+
+//=======================================================================================================================================================================================================================
+
 
 
 

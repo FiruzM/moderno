@@ -455,6 +455,164 @@
 
 //=======================================================================================================================================================================================================================
 
+//ADVANTAGES =======================================================================================================================================================================================================================
+.adventages {
+    padding: 115px 0 55px 0;
+    min-height: 616px;
+    background-color: $darkBlue;
+    // .adventages__title
+
+    &__title {
+        color: #fff;
+    }
+
+    // .adventages__inner
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+        margin-top: 75px;
+    }
+
+    // .adventages__item
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & + &{
+            margin-left: 80px;
+        }
+        &:hover{
+            .adventages__item-img{
+                background-color: $green;
+                
+            }
+            .adventages__item-title{
+                color: $green;
+            }
+            .adventages__item-img{
+                g{
+                    fill: #fff;
+                }
+                .gift{
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    // .adventages__item-img
+
+    &__item-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 114px;
+        height: 114px;
+        background-color: #fff;
+        border-radius: 50%;
+        transition: background 0.3s;
+
+        
+    }
+
+    // .adventages__item-title
+
+    &__item-title {
+        margin-top: 30px;
+        font-size: 24px;
+        font-weight: 500;
+        color: #fff;
+        transition: color 0.3s;
+    }
+
+    // .adventages__item-text
+
+    &__item-text {
+        margin-top: 14px;
+        max-width: 327px;
+        font-size: 15px;
+        line-height: (24/15)*100%;
+        color: #b0bec5;
+        text-align: center;
+    }
+
+    .lock{
+        width: 70px;
+        height: 66px;
+    }
+
+    .gift{
+        width: 73px;
+        height: 74px;
+        color: #000;
+        transition: color .3s;
+        
+    }
+
+    .like{
+        width: 86px;
+        height: 74px;
+    }
+
+    g{
+        transition: fill .1s;
+    }
+}
+
+
+//=======================================================================================================================================================================================================================
+
+//AUTHOR=======================================================================================================================================================================================================================
+.authors {
+    margin-top: 5px;
+    padding: 245px 0px 144px;
+    min-height: 750px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    // .author__inner
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        max-width: 653px;
+        margin: 0 auto;
+        padding: 80px 60px;
+        background-color: $green;
+    }
+
+    // .author__text
+
+    &__text {
+        max-width: 260px;
+        font-size: 30px;
+        line-height: (36/30)*100%;
+        color: #fff;
+        span{
+            font-weight: 700;
+        }
+    }
+
+    // .author__btn
+
+    &__btn {
+        padding: 20px 10px;
+        max-width: 225px;
+        width: 100%;
+        font-size: 18px;
+        line-height: 100%;
+        text-align: center;
+        background-color: #fff;
+        cursor: pointer;
+        align-self: center;
+    }
+}
+
+
+//=======================================================================================================================================================================================================================
+
 
 
 

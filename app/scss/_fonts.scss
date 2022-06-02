@@ -25,3 +25,51 @@
          url('../fonts/roboto-v30-latin-700.woff2') format('woff2'), 
          url('../fonts/roboto-v30-latin-700.woff') format('woff'); 
   }
+
+
+  @font-face {
+     font-family: 'icons';
+     src:  url('../fonts/icons.eot?gxr8ze');
+     src:  url('../fonts/icons.eot?gxr8ze#iefix') format('embedded-opentype'),
+       url('../fonts/icons.ttf?gxr8ze') format('truetype'),
+       url('../fonts/icons.woff?gxr8ze') format('woff'),
+       url('../fonts/icons.svg?gxr8ze#icons') format('svg');
+     font-weight: normal;
+     font-style: normal;
+     font-display: block;
+   }
+   
+   [class^="_icon-"], [class*=" _icon-"] {
+     /* use !important to prevent issues with browser extensions that change fonts */
+     font-family: 'icons' !important;
+     speak: never;
+     font-style: normal;
+     font-weight: normal;
+     font-variant: normal;
+     text-transform: none;
+     line-height: 1;
+   
+     /* Better Font Rendering =========== */
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+   }
+   
+   ._icon-marker:before {
+     content: "\f041";
+   }
+   ._icon-shopping:before {
+     content: "\f07a";
+   }
+   ._icon-phone:before {
+     content: "\f095";
+   }
+   ._icon-flash:before {
+     content: "\f0e7";
+   }
+   ._icon-angle-right:before {
+     content: "\f105";
+   }
+   ._icon-location-arrow:before {
+     content: "\f124";
+   }
+   
